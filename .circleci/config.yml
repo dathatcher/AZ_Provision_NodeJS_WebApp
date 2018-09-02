@@ -10,7 +10,6 @@ jobs:
           az -v
           az appservice plan create -g myResourceGroupVM -n ServicePlandt
           az webapp create -g myResourceGroupVM -p ServicePlandt -n dtapp2 --deployment-local-git
-          
 workflows:
   version: 2
   build_Infra:
